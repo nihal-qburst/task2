@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   def show
     
     if @user.from == "" then @user.from = @@translator.detect(@user.input)  end  
-   # @user.from = find_lang(@user.from)
+    @user.from = find_lang(@user.from.to_s)
     @user.to = find_lang(@user.to)
    
   end
