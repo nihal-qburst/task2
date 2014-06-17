@@ -1,23 +1,21 @@
-<p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Input:</strong>
+  <strong>Input text:</strong>
   <%= @user.input %>
 </p>
 
 <p>
-  <strong>From:</strong>
+  <strong>From :</strong>
   <%= @user.from %>
 </p>
 
 <p>
-  <strong>To:</strong>
+  <strong>To :</strong>
   <%= @user.to %>
 </p>
 
 <p>
-  <strong>Output:</strong>
+  <strong>Translated text :</strong>
   <%= @user.output %>
-</p>
+</p><br><br>
 
-<%= link_to 'Back', translate_path %>
+<%= button_to "BACK", translate_path, :method => "get" %>

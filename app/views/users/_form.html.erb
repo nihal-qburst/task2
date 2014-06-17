@@ -14,25 +14,19 @@
   <div class="field">
     <%= f.label :input %><br>
     <%= f.text_field :input %>
-   
   </div>
+
   <div class="field">
     <%= f.label :from %><br>
-   <%= f.select(:from, options_for_select(LANGUAGE_LIST)) %>
-  
-
+    <%= f.select(:from, options_for_select(LANGUAGE_LIST)) %>
   </div>
+ 
   <div class="field">
     <%= f.label :to %><br>
-     <%= f.select(:to, options_for_select(LANGUAGE_LIST)) %>
-
-
+    <%= f.select(:to, options_for_select(LANGUAGE_LIST[1...46])) %>
   </div>
-  <div class="field">
-    <%= f.label :output %><br>
-    <%= f.text_field :output %>
-  </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Translate" %>
   </div>
 <% end %>
